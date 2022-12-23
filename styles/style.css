@@ -1,0 +1,403 @@
+[class*=__container] {
+   width: 100%;
+   max-width: 1088px;
+   margin: 0 auto;
+   padding: 0 15px;
+ }
+ * {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ :focus,
+ :active {
+   outline: none;
+ }
+ 
+ a:focus,
+ a:active {
+   outline: none;
+ }
+ ul li {
+   list-style: none;
+ }
+ a,
+a:visited {
+  text-decoration: none;
+}
+  
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+.header {
+   position: absolute;
+   z-index: 2;
+   top: 30px;
+   right: 0;
+   width: 100%;
+}
+.header__container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__list {
+   display: flex;
+   align-items: center;
+}
+
+.header__link {
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 140%;
+   color: #FFFFFF;
+   height: 42px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 0 20px;
+   transition:background-color 0.3s;
+
+}
+.header__link:hover{
+   background-color: #B59571;
+
+}
+
+.page {
+   flex: 1 1 100%;
+}
+
+.main {
+   
+   background-image: url('../images/background.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 1000px;
+   width: 100%;
+   margin-bottom: 80px;
+}
+.main__container{
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+.main__title{
+   position: absolute;
+   bottom: 150px;
+   left: 0;
+   font-weight: 700;
+   font-size: 54px;
+   line-height: 140%;
+   color: #FFFFFF;
+   max-width: 856px;
+
+}
+.main__btn {
+   position: absolute;
+   font-size: 18px;
+   text-transform: uppercase;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%);
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 328px;
+   width: 100%;
+   height: 50px;
+   border: 1px solid #fff;
+   border-radius: 9px;
+   transition:background-color 0.3s ;
+}
+.main__btn:hover{
+   background-color: burlywood;
+}
+
+.menu {
+   margin-bottom: 80px;
+}
+.menu__top{
+   display: flex;
+   margin-bottom: 35px;
+}
+.menu__title {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 120%;
+   color: #333333;
+   margin-right: 50px;
+   padding-bottom: 10px;
+   border-bottom: 5px solid #333333;
+}
+.menu__text {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 140%;
+   color: #333333;
+}
+.menu__items {
+   display: flex;
+   flex-wrap: wrap;
+}
+.menu__item {
+   margin-right: 15px;
+}
+
+.item-menu__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.item-menu__img {
+   box-shadow: 0px 10px 20px 10px rgba(30, 25, 63, 0.07);
+   margin-bottom: 25px;
+
+}
+.menu__link {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 140%;
+   text-transform: uppercase;
+   color: #333333;
+
+}
+.footer {
+   background: #5B5B5B;
+   padding: 40px 0;
+}
+
+.footer__text {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 140%;
+   color: #FFFFFF;
+   margin-bottom: 15px;
+}
+
+.timetable {
+   margin-bottom: 30px;
+}
+.timetable__body {
+   display: flex;
+   align-items: center;
+}
+.timetable__title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 140%;
+   color: #FFFFFF;
+   margin-right: 15px;
+
+}
+.timetable__text {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 140%;
+   color: #FFFFFF;
+}
+.footer__address {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: #FFFFFF;
+   margin-bottom: 30px;
+
+}
+
+.social {
+   display: flex;
+}
+.social img{
+   margin-right: 30px;
+}
+.footer__link {
+   display: inline-block;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: #FFFFFF;
+   margin-bottom: 15px;
+}
+
+
+
+
+/*MENU PAGE*/
+
+.header-menu{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   background-color: #5B5B5B;
+   margin-bottom: 50px;
+}
+.menu-page__container {
+   max-width: 1326px;
+}
+.menu-page__title {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 120%;
+   color: #333333;
+   margin-bottom: 30px;
+   display: flex;
+   width: 100%;
+   padding-bottom: 30px;
+   border-bottom: 3px solid #B59571;
+
+}
+.menu-page__nav {
+   margin-bottom: 50px;
+}
+.menu-page__list {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.menu-page__item {
+}
+.menu-page__link {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: #333333;
+   padding-bottom: 5px;
+   border-bottom: 3px solid #B59571;
+}
+.menu-page__body {
+
+}
+.body-menu {
+   margin-bottom: 80px;
+}
+.body-menu__items {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: -25px;
+   margin-right: -26px;
+}
+.body-menu__column {
+   flex: 0 1 330px;
+   padding-bottom: 25px;
+   padding-right: 26px;
+}
+.body-menu__item {
+   border: 1px solid rgba(51, 51, 51, 0.2);
+}
+.body-menu__img {
+   max-width: 100%;
+}
+.body-menu__title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 140%;
+   text-align: center;
+   display: block;
+   color: #333333;
+   margin-bottom: 25px;
+}
+.body-menu__body{
+   padding: 30px;
+}
+.body-menu__bottom {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.body-menu__price {
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 120%;
+   color: #333333;
+}
+.body-menu__btn {
+   background: #B59571;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 140%;
+   text-align: center;
+   color: #FFFFFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 113px;
+   height: 42px;
+}
+
+/*О НАС*/
+
+.page {
+}
+.page-aboutUs {
+}
+.page-aboutUs__container {
+}
+.page-aboutUs__title {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 120%;
+   color: #333333;
+   margin-bottom: 30px;
+   display: flex;
+   width: 100%;
+   padding-bottom: 30px;
+   border-bottom: 3px solid #B59571;
+}
+.page-aboutUs__body {
+   max-width: 530px;
+   width: 100%;
+}
+.page-aboutUs__video{
+   max-width: 100%;
+}
+
+/*ПЛЭЙЛИСТ*/
+
+.page {
+}
+.page-playlist {
+}
+.page-playlist__container {
+}
+.page-playlist__title {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 120%;
+   color: #333333;
+   margin-bottom: 30px;
+   display: flex;
+   width: 100%;
+   padding-bottom: 30px;
+   border-bottom: 3px solid #B59571;
+
+}
+.page-playlist__body {
+   
+}
